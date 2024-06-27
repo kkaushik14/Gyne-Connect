@@ -1,0 +1,89 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Hospital {
+  address      String?
+  appointments Appointment[]
+  createdAt    DateTime      @default(now())
+  id           String        @id @default(cuid())
+  locations    Location[]
+  name         String?
+  phone        String?
+  services     String?
+  updatedAt    DateTime      @updatedAt
+}
+
+model Appointment {
+  appointmentDate DateTime?
+  createdAt       DateTime               @default(now())
+  hospital        Hospital?              @relation(fields: [hospitalId], references: [id])
+  hospitalId      String?
+  id              String                 @id @default(cuid())
+  payments        Payment[]
+  status          EnumAppointmentStatus?
+  updatedAt       DateTime               @updatedAt
+  user            User?                  @relation(fields: [userId], references: [id])
+  userId          String?
+}
+
+model Location {
+  address    String?
+  createdAt  DateTime  @default(now())
+  hospital   Hospital? @relation(fields: [hospitalId], references: [id])
+  hospitalId String?
+  id         String    @id @default(cuid())
+  latitude   Float?
+  longitude  Float?
+  updatedAt  DateTime  @updatedAt
+}
+
+model Otp {
+  code      String?
+  createdAt DateTime  @default(now())
+  expiresAt DateTime?
+  id        String    @id @default(cuid())
+  updatedAt DateTime  @updatedAt
+  user      User?     @relation(fields: [userId], references: [id])
+  userId    String?
+}
+
+model Payment {
+  amount        Float?
+  appointment   Appointment?       @relation(fields: [appointmentId], references: [id])
+  appointmentId String?
+  createdAt     DateTime           @default(now())
+  id            String             @id @default(cuid())
+  status        EnumPaymentStatus?
+  updatedAt     DateTime           @updatedAt
+  user          User?              @relation(fields: [userId], references: [id])
+  userId        String?
+}
+
+model User {
+  appointments Appointment[]
+  createdAt    DateTime      @default(now())
+  email        String?       @unique
+  firstName    String?
+  id           String        @id @default(cuid())
+  lastName     String?
+  otps         Otp[]
+  password     String
+  payments     Payment[]
+  roles        Json
+  updatedAt    DateTime      @updatedAt
+  username     String        @unique
+}
+
+enum EnumAppointmentStatus {
+  Option1
+}
+
+enum EnumPaymentStatus {
+  Option1
+}
