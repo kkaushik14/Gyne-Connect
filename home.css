@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff74;
+}
+
+.details .La-oslo {
+    font-weight: 600;
+    font-size: 48px;
+    color:#FF385C;
+}
+
+.details .La-poslo {
+    font-weight: 600;
+    font-size: 48px;
+    color: #222222;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+}
+
+.details {
+    padding: 0;
+}
+
+.map_set {
+    width: 45vw;
+    height: 30vw;
+    /* margin: 20px auto; */
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 4px 64px #0ca1f787;
+    /* padding: 0px; */
+}
+
+.header img {
+    width: 100px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 120px 120px 50vw 220px 220px;
+    grid-template-rows: 50px 50px 50px 50px;
+}
+
+.header .hd1 {
+    grid-column: 3/4;
+    padding: 30px 15px;
+}
+
+.but {
+    padding: 29px 10px;
+}
+
+.log-sin a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19.125px;
+}
+
+.log-sin {
+    border: none;
+    background-color: #FA3359;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.log-sin:hover {
+    background-color: #f42c5bf0;
+    transition: all ease 0.8s;
+}
+
+.para {
+    padding: 35px 10px;
+}
+
+.para p {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.box-sep {
+    padding: 80px;
+    font-size: 51px;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.first-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-img img {
+    width: 80vw;
+    box-shadow: 2px 1px 3px #d0cfcf8f;
+}
+
+.descrep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    padding: 12px 0;
+    word-spacing: 1px;
+    line-height: 1.6vw;
+}
+
+.descrep .fst1,
+.secnd2,
+.trd3 {
+    font-weight: 600;
+    font-size: 19.125px;
+}
+
+.descrep .fst {
+    width: 22vw;
+    font-size: 17px;
+}
+
+.descrep .secnd {
+    width: 24vw;
+    font-size: 17px;
+}
+
+.descrep .trd {
+    width: 22vw;
+    font-size: 17px;
+}
+
+footer .ques-rel {
+    height: 40vw;
+    background-color: rgb(249, 243, 236);
+}
+
+/* FAQ design */
+/* .faqs {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+} */
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FF385C;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.question {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.answer {
+    display: none;
+    padding-left: 20px;
+    color: #555;
+}

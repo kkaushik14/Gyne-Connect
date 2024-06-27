@@ -1,0 +1,147 @@
+/* Mobile devices */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    header .site img {
+        width: 80px;
+    }
+
+    header .site {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    main .info-img1 img {
+        width: 100%;
+    }
+
+    .parent {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .dropdown {
+        position: static;
+    }
+}
+
+
+/* Tablet devices */
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    header .site img {
+        width: 90px;
+    }
+
+    header .site {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    main .info-img1 img {
+        width: 80%;
+    }
+
+    .parent {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .dropdown {
+        position: absolute;
+    }
+}
+
+
+/* Laptop devices */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    header .site img {
+        width: 100px;
+    }
+
+    header .site {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    main .info-img1 img {
+        width: 70%;
+    }
+
+    .parent {
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .dropdown {
+        position: absolute;
+    }
+}
+
+
+/* Monitor devices */
+@media (min-width: 1441px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 40px;
+    }
+
+    header .site img {
+        width: 120px;
+    }
+
+    header .site {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    main .info-img1 img {
+        width: 60%;
+    }
+
+    .parent {
+        width: 60%;
+        margin: 30px auto;
+    }
+
+    .dropdown {
+        position: absolute;
+    }
+}

@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff74;
+}
+
+/* DropBox design */
+.dropdown {
+    display: none;
+    position: absolute;
+    border-radius: 12px;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+    transition: all ease 0.6s;
+}
+
+.show {
+    display: block;
+}
+
+/* nav design */
+nav li a {
+    text-decoration: none;
+    color: #201c1c82;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+header .site img {
+    width: 100px;
+}
+
+header .site a {
+    text-decoration: none;
+}
+
+header .site {
+    display: grid;
+    grid-template-columns: 120px 120px 400px 120px 120px 120px;
+    grid-template-rows: 120px 50px;
+}
+
+.site .a1 {
+    grid-column: 2/3;
+    padding: 20px 5px;
+}
+
+.site .a2 {
+    grid-column: 4/4;
+    padding: 20px 5px;
+    color: #00000079;
+}
+
+.site .a3 {
+    grid-column: 5/5;
+    padding: 20px 5px;
+    color: #00000079;
+}
+
+.site .a4 {
+    grid-column: 6/6;
+    padding: 20px 5px;
+    color: #00000079;
+}
+
+.a2:hover{
+    color: #000;
+    transition: all ease 0.5s;
+}
+
+.a3:hover{
+    color: #000;
+    transition: all ease 0.5s;
+}
+
+.a4:hover {
+    color: #000;
+    transition: all ease 0.5s;
+}
+
+.sepration {
+    border: 1px solid #EBEBEB;
+}
+.icon {
+    font-size: 18px;
+    color: #00000079;
+}
+
+.icon:hover {
+    color: #000;
+    transition: all ease 0.7s;
+}
+
+.lv:hover {
+    color: #000;
+    transition: all ease 0.7s;
+}
+
+main .info-img1 {
+    text-align: center;
+    padding: 2vw 0;
+}
+
+main .info-img1 img {
+    width: 90vw;
+}
+
+.sea-arch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sea-arch .bar {
+    padding: 10px;
+}
+
+/* card design */
+.parent {
+    border: 2px solid #4e4949c1;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px #4f4a4a6d;
+    width: 235px;
+    height: 400px;
+    margin: 10px;
+}
+
+.box1 {
+    padding: 5px;
+}
+
+.box1 img {
+    border-radius: 10px;
+    height: 160px;
+}
+
+.cell {
+    text-align: center;
+}
+
+.cell span {
+    margin: 10px;
+    border: 1px solid #625a5a98;
+    border-radius: 50px;
+    font-size: 12px;
+    padding: 8px 16px 8px 16px;
+}
+
+.btn button {
+    border-radius: 20px;
+    padding: 10px;
+    border: 0;
+    background-color: rgba(80, 124, 201, 0.744);
+    box-shadow: 2px 3px 2px #609be87a;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    background-color: rgba(101, 194, 194, 0.573);
+    color: #000;
+}
+
+.btn {
+     text-align: center;
+     padding: 10px;
+}
+
+.lok-sek p {
+    font-size: 12px;
+    padding: 7px 15px;
+    color: rgb(141, 129, 129);
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn a:hover {
+    color: #000;
+    font-weight: bolder;
+}
+
+.lok-sek h2 {
+    text-align: center;
+    text-shadow: 2px 3px 2px #4b444497;
+    padding: 8px 0;
+}
+
+/* footer */
+footer .set-go {
+    height: 40vw;
+    background-color: rgb(240, 240, 228);
+}

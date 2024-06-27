@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* * {
+    background-color: #000;
+} */
+
+h1 {
+    color: rgb(57, 150, 119);
+    font-family: Tiny5;
+    /* text-decoration: underline wavy; */
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.map_set {
+    width: 60vw;
+    height: 30vw;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    box-shadow: 8px 8px 64px #0ca1f787;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #f70c43;
+    /* box-shadow: 4px 2px 94px #030202; */
+    color: #000;
+    font-size: 17px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    /* margin: auto; */
+}
+
+button:hover {
+    background-color: #7a0722;
+    color: #ccc;
+    transition: all ease 1s ;
+}
+
+/* #search-button {
+    margin-top: 10px;
+} */
+
+.controls {
+    border-radius: 8px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    font-family: Roboto Slab;
+    text-decoration: none;
+    color: rgb(54, 127, 103);
+    cursor: pointer;
+}
+
+/* nav li a:hover {
+    font-family: sans-serif;
+} */
+
+.header {
+    /* border: 1px solid #c24865ae; */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 12px #000;
+}
+
+/* DropBox design */
+.dropdown {
+    display: none;
+    position: absolute;
+    border-radius: 12px;
+    background-color: #f3dada;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
