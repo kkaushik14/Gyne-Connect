@@ -94,7 +94,7 @@ html {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bolder;
     word-spacing: 2px;
-    color: #535050;
+    color: #c3c1c1;
 }
 
 .logo img {
@@ -178,6 +178,80 @@ header .navi nav {
     text-align: center;
     font-size: 48px;
     font-weight: 600;
-    color: #FA3359;
+    color: #a6a4a4;
     padding: 0 0 25px 0;
+    filter: drop-shadow(1px 1px 20px #FF385C);
+}
+
+@keyframes blink-shadow {
+    0%, 100% {
+        filter: drop-shadow(1px 1px 25px #FF385C);
+      /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+    }
+    50% {
+        filter: drop-shadow(1px 1px 5px #0468a6);
+      /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0); */
+    }
+}  
+
+@keyframes text-shadow {
+    0%, 100% {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+    }
+  }
+
+.book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    animation: text-shadow 1.5s infinite;
+}
+
+.book .appo-book {
+    width: 50vw;
+    height: 46vh;
+    background-color: #f1fafe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-radius: 22px;
+}
+
+.appo-book .appo-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0077BF;
+    animation: blink-shadow 2s infinite;
+    color: #f1fafe;
+}
+
+.appo-book .appo-btn:hover {
+    background-color: #3492cd;
+    transition: all ease 0.8s;
+    cursor: pointer;
+}
+
+.book .appo-book .appo-h {
+    color: #0C71B0;
+    line-height: 2;
+}
+
+.book .appo-book .appo-h p{
+    line-height: 1;
+    word-wrap: break-word;
+    font-size: 18px;
+    color: #1b467bbb;
+}
+
+.book .appo-book .appo-h p span {
+    display: block;
+    margin-top: 5px;
 }
