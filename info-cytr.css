@@ -220,3 +220,8 @@ hr {
 .coun .report p a:hover {
     text-decoration: underline;
 }
+
+.back-menu i {
+    font-size: 25px;
+    font-weight: 900;
+}
