@@ -207,17 +207,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // FAQ clicking effect
-document.addEventListener("DOMContentLoaded", function() {
-    const questions = document.querySelectorAll(".question");
+document.addEventListener("DOMContentLoaded", function () {
+    const faqItems = document.querySelectorAll('.faq-item');
 
-    questions.forEach(question => {
-        question.addEventListener("click", function() {
-            const answer = this.nextElementSibling;
+    faqItems.forEach(item => {
+        const question = item.querySelector('.question');
+        const answer = item.querySelector('.answer');
 
-            if (answer.style.display === "block") {
-                answer.style.display = "none";
+        question.addEventListener('click', function () {
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
             } else {
-                answer.style.display = "block";
+                answer.style.display = 'block';
             }
         });
     });

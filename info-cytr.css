@@ -225,3 +225,99 @@ hr {
     font-size: 25px;
     font-weight: 900;
 }
+
+.tre .report2 img {
+    width: 42vw;
+}
+
+.tre h2 {
+    padding: 10px;
+    color: #007bff;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.tre .report2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.tre .report2 p {
+    line-height: 30px;
+    color: #9f8b8b;
+    font-weight: normal;
+}
+
+.tre .report2 p a {
+    text-decoration: none;
+}
+
+.tre .report2 p a:hover {
+    text-decoration: underline;
+}
+
+.tes .report3 img {
+    width: 36vw;
+}
+
+.tes h2 {
+    padding: 10px;
+    color: #007bff;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.tes .report3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.tes .report3 p {
+    line-height: 30px;
+    color: #9f8b8b;
+    font-weight: normal;
+}
+
+.tes .report3 p a {
+    text-decoration: none;
+}
+
+.tes .report3 p a:hover {
+    text-decoration: underline;
+}
+
+.lab .report4 img {
+    height: 44vh;
+}
+
+.lab h2 {
+    padding: 10px;
+    color: #007bff;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.lab .report4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.lab .report4 p {
+    line-height: 30px;
+    color: #9f8b8b;
+    font-weight: normal;
+}
+
+.lab .report4 p a {
+    text-decoration: none;
+}
+
+.lab .report4 p a:hover {
+    text-decoration: underline;
+}
