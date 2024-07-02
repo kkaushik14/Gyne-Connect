@@ -37,7 +37,7 @@
             </div>
 
         
-            <div id="section1" class="extra">
+            <div class="extra">
                 <div class="hospitals sol-mol">
                     <img src="https://my.clevelandclinic.org/-/scassets/images/org/locations/home/find-a-doctor-card.jpg" alt="Image">
                     <h2>Hospitals</h2>
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="tyst"><p>Things You Should Try</p></div>
+            <div class="tyst" id="section1"><p>Things You Should Try</p></div>
 
             <div id="appoiBook" class="book">
                <div class="appo-book">
@@ -75,6 +75,20 @@
                         </h2>
                         <button class="appo-btn" onclick="genForm()">Book Now</button>
                </div>
+
+               <div id="appointmentForm" class="appo-book-form hidden">
+                <h2>Fill out the form to book your appointment</h2>
+                <form id="appointmentFormElement">
+                    <input id="name_input" type="text" placeholder="Your Name" required>
+                    <input id="email_input" type="email" placeholder="Your Email" required>
+                    <input id="age_input" type="number" placeholder="Age" required>
+                    <input id="contact_input" type="tel" placeholder="Contact Number" required>
+                    <input id="scheduled_date_input" type="date" placeholder="Scheduled Date" required>
+                    <input id="scheduled_time_input" type="time" placeholder="Scheduled Time" required>
+                    <input id="enter" type="submit" value="Book Appointment">
+                </form>
+                </div>
+
             </div>
             
             <div id="section2" class="algo-esco">

@@ -255,3 +255,68 @@ header .navi nav {
     display: block;
     margin-top: 5px;
 }
+
+/* form css */
+.hidden {
+    display: none;
+}
+
+.appo-book-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.appo-book-form h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.appo-book-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.appo-book-form form input[type="text"],
+.appo-book-form form input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.appo-book-form form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appo-book-form form button:hover {
+    background-color: #0056b3;
+}
+
+#appointmentForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+#appointmentForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#appointmentForm input[type="submit"] {
+    background-color: #0077BF;
+    color: #fff;
+    cursor: pointer;
+}
