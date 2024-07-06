@@ -2,14 +2,7 @@
 First functional project.
 
 ---
-
-# Gyne-Connect
-
 ![rmv-tempo-logo](https://github.com/kkaushik14/Gyne-Connect/assets/147918121/d8709b1b-a6ba-4f1a-907f-518b88b3892f)
-
-
-**Gyne-Connect** is a comprehensive web application dedicated to promoting HIV awareness and support. It empowers users by providing crucial features such as locating nearby HIV centers, facilitating appointment scheduling, and delivering essential information on HIV. Designed to enhance accessibility and support, Gyne-Connect aims to streamline access to HIV healthcare services while fostering community awareness and education.
-
 ---
 
 ## Table of Contents
@@ -20,12 +13,6 @@ First functional project.
 4. [Usage](#usage)
 5. [Technologies Used](#technologies-used)
 6. [Contributing](#contributing)
-7. [License](#license)
-
----
-
-Here's a regenerated README file based on the provided information:
-
 ---
 
 # Gyne-Connect
@@ -57,29 +44,6 @@ Gyne-Connect is a comprehensive web application designed to assist in locating n
 4. **Information Center**
    - Detailed information about available facilities and services.
    - Resources and educational content on HIV/AIDS awareness.
-
-## Getting Started
-
-To get started with Gyne-Connect, follow these steps:
-
-1. **Clone the Repository:**
-   ```
-   git clone <repository_url>
-   cd Gyne-Connect
-   ```
-
-2. **Install Dependencies:**
-   ```
-   npm install
-   ```
-
-3. **Run the Application:**
-   ```
-   npm start
-   ```
-
-4. **Access the Application:**
-   Open your web browser and go to `http://localhost:3000` to view Gyne-Connect.
 
 ## Installation
 
