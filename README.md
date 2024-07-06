@@ -7,12 +7,13 @@ First functional project.
 
 ## Table of Contents
 
-1. [About](#about)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Technologies Used](#technologies-used)
-6. [Contributing](#contributing)
+1. [About](#Gyne-Connect)
+2. [Key Features](#key-features)
+3. [Pages](#pages)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Technologies Used](#technologies-used)
+7. [Contributing](#contributing)
 ---
 
 # Gyne-Connect
