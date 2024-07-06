@@ -43,7 +43,7 @@
                     <h2>Hospitals</h2>
                     <h3 class="fol-col">Search by name, specialty and more.</h3>
                     <div class="btn-set">
-                        <a href="#"><button class="sat-sut">Find Hospital</button></a>
+                        <button class="sat-sut">Find Hospital</button>
                     </div>
                 </div>
             
@@ -52,21 +52,21 @@
                     <h2>Locations & Directions</h2>
                     <h3 class="fol-col">Get location details.</h3>
                     <div class="btn-set">
-                        <a href="#"><button class="sat-sut">Get location</button></a>
+                        <button class="sat-sut">Get location</button>
                     </div>
                 </div>
             
-                <div class="timo sol-mol">
+                <div class="timo sol-mol" id="appointmentList">
                     <img src="https://my.clevelandclinic.org/-/scassets/images/org/locations/home/appointments-card.jpg" alt="Image">
                     <h2>Appointments</h2>
                     <h3 class="fol-col">Check for dates and timing.</h3>
                     <div class="btn-set">
-                        <a href="#"><button class="sat-sut">Check</button></a>
+                        <button class="sat-sut" id="downloadPdfBtn">Check</button>
                     </div>
                 </div>
             </div>
 
-            <div class="tyst" id="section1"><p>Things You Should Try</p></div>
+            <div class="tyst" id="section1"></div>
 
             <div id="appoiBook" class="book">
                <div class="appo-book">
@@ -77,7 +77,7 @@
                </div>
 
                <div id="appointmentForm" class="appo-book-form hidden">
-                <h2>Fill out the form to book your appointment</h2>
+                <h2>Book your appointment</h2>
                 <form id="appointmentFormElement">
                     <input id="name_input" type="text" placeholder="Your Name" required>
                     <input id="email_input" type="email" placeholder="Your Email" required>
@@ -209,6 +209,7 @@
     </footer>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
     <script src="consult.js"></script>
 </body>
 </html>
