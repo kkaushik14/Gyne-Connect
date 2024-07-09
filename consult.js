@@ -53,7 +53,7 @@ function genForm() {
 }
 
 
-//data fetch from backend
+// data fetch from backend
 function fetchDataAndGeneratePdf() {
     fetch('http://localhost:2003/api/appointments')
         .then(response => {

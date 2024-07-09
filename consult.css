@@ -213,7 +213,6 @@ header .navi nav {
     justify-content: center;
     align-items: center;
     padding: 48px;
-    animation: text-shadow 1.5s infinite;
 }
 
 .book .appo-book {
@@ -225,6 +224,7 @@ header .navi nav {
     align-items: center;
     gap: 50px;
     border-radius: 22px;
+    animation: text-shadow 1.5s infinite;
 }
 
 .appo-book .appo-btn {
@@ -317,4 +317,13 @@ header .navi nav {
 #appointmentForm input[type="submit"]:hover {
     background-color: #3492cd;
     transition: all ease 0.8s;
+}
+
+form fieldset {
+    padding: 20px;
+    color: #9a9696;
+}
+
+form .choose {
+    animation: none;
 }
