@@ -13,9 +13,14 @@ function genForm() {
         var contact = document.getElementById('contact_input').value;
         var scheduledDate = document.getElementById('scheduled_date_input').value;
         var scheduledTime = document.getElementById('scheduled_time_input').value;
+        var options = [];
+        var checkboxes = document.querySelectorAll('input[name=options]:checked');
+        checkboxes.forEach(function (checkbox) {
+            options.push(checkbox.value);
+        });
 
-        if (!name || !email || !age || !contact || !scheduledDate || !scheduledTime) {
-            alert('Please fill out all required fields.');
+        if (!name || !email || !age || !contact || !scheduledDate || !scheduledTime || options.length === 0) {
+            alert('Please fill out all required fields and select at least one option.');
             return;
         }
 
@@ -25,7 +30,8 @@ function genForm() {
             age,
             contact,
             scheduledDate,
-            scheduledTime
+            scheduledTime,
+            options
         };
 
         fetch('http://localhost:2003/api/appointments/book', {
