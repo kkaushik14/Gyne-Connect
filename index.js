@@ -33,3 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
 //         });
 //     });
 // });
+
+// Loader
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    loader.style.display = 'none';
+});

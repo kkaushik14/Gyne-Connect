@@ -104,3 +104,9 @@ function genForm() {
 // } else {
 //     console.error('Button not found!');
 // }
+
+// Loader
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    loader.style.display = 'none';
+});
