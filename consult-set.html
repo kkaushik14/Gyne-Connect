@@ -44,7 +44,7 @@
                     <h2>Hospitals</h2>
                     <h3 class="fol-col">Search by name, specialty and more.</h3>
                     <div class="btn-set">
-                        <button class="sat-sut">Find Hospital</button>
+                        <button class="sat-sut" onclick="openSearchPage()">Find Hospital</button>
                     </div>
                 </div>
             
@@ -229,6 +229,12 @@
     </footer>
 
 
+
+    <script>
+        function openSearchPage() {
+            window.open('search.html', '_blank');
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
     <script src="consult.js"></script>
 </body>
