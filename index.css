@@ -70,6 +70,10 @@ header .site {
     padding: 20px 5px;
 }
 
+.site .a1 img {
+    width: 9vw;
+}
+
 .site .a2 {
     grid-column: 4/4;
     padding: 20px 5px;
